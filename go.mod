@@ -1,4 +1,4 @@
-module github.com/juanfont/headscale
+module github.com/quantifiedsecurity/headscale
 
 go 1.24.0
 

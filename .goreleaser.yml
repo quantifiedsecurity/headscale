@@ -29,8 +29,8 @@ builds:
       - -mod=readonly
     ldflags:
       - -s -w
-      - -X github.com/juanfont/headscale/hscontrol/types.Version={{ .Version }}
-      - -X github.com/juanfont/headscale/hscontrol/types.GitCommitHash={{ .Commit }}
+      - -X github.com/quantifiedsecurity/headscale/hscontrol/types.Version={{ .Version }}
+      - -X github.com/quantifiedsecurity/headscale/hscontrol/types.GitCommitHash={{ .Commit }}
     tags:
       - ts2019
 
@@ -63,7 +63,7 @@ nfpms:
     priority: optional
     vendor: headscale
     maintainer: Kristoffer Dalby <kristoffer@dalby.cc>
-    homepage: https://github.com/juanfont/headscale
+    homepage: https://github.com/quantifiedsecurity/headscale
     description: |-
       Open source implementation of the Tailscale control server.
       Headscale aims to implement a self-hosted, open source alternative to the
@@ -100,7 +100,7 @@ nfpms:
 kos:
   - id: ghcr
     repositories:
-      - ghcr.io/juanfont/headscale
+      - ghcr.io/quantifiedsecurity/headscale
       - headscale/headscale
 
     # bare tells KO to only use the repository
@@ -131,7 +131,7 @@ kos:
 
   - id: ghcr-debug
     repositories:
-      - ghcr.io/juanfont/headscale
+      - ghcr.io/quantifiedsecurity/headscale
       - headscale/headscale
 
     bare: true
