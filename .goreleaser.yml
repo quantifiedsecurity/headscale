@@ -101,7 +101,6 @@ kos:
   - id: ghcr
     repositories:
       - ghcr.io/quantifiedsecurity/headscale
-      - headscale/headscale
 
     # bare tells KO to only use the repository
     # for tagging and naming the container.
@@ -132,7 +131,6 @@ kos:
   - id: ghcr-debug
     repositories:
       - ghcr.io/quantifiedsecurity/headscale
-      - headscale/headscale
 
     bare: true
     base_image: gcr.io/distroless/base-debian12:debug
